@@ -1,3 +1,5 @@
+-- Note: This is kinda useless, just check the readme file for information.
+
 ## Loadstring
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/Mercury-Ui-Lib/main/Source.lua"))()
