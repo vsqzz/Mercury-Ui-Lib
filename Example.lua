@@ -67,8 +67,60 @@ GUI:Notification{
 }
 
 
+local Tab = GUI:Tab{
+	Name = "Regular scripts",
+	Icon = "rbxassetid://437401177"
+}
 
-Tab:ColorPicker{
-	Style = Mercury.ColorPickerStyles.Legacy,
-	Callback = function(color) end
+Tab:Button{
+	Name = "Infinite Yeild",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/InfYeild.lua", true))()
+	    end,
+}
+
+Tab:Button{
+	Name = "Sword Reach",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/SwordReach.lua", true))()
+	    end,
+}
+
+Tab:Button{
+	Name = "RemoteSpy",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/SimpleSpySource.lua", true))()
+	    end,
+}
+
+local Tab = GUI:Tab{
+	Name = "Universal scripts",
+	Icon = "rbxassetid://6346857246"
+}
+
+Tab:Button{
+	Name = "Universal Silent aim",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/UniversalSilentAim.lua", true))()
+	    end,
+}
+
+Tab:Button{
+	Name = "Universal Aimbot",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/UniversalAimbot.lua", true))()
+	    end,
+}
+
+Tab:Button{
+	Name = "Universal AimbotFov",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/UniversalAimlockFov.lua", true))()
+	    end,
 }
