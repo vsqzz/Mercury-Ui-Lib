@@ -8,7 +8,9 @@
 | (       / ( ) \ | (   ) || |   | || (      | |      | (              ) || |      | (\ (      | |   | (         | |   
 | (____/\( /   \ )| )   ( || )   ( || )      | (____/\| (____/\  /\____) || (____/\| ) \ \_____) (___| )         | |   
 (_______/|/     \||/     \||/     \||/       (_______/(_______/  \_______)(_______/|/   \__/\_______/|/          )_(   
-                                                                                                                       
+ ~ by shezan
+	~ this is just a example
+		~ not a loadstring xd
 ]]
 
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/Mercury-Ui-Lib/main/Source.lua"))()
