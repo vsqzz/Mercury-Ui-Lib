@@ -20,7 +20,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/Mercury-Ui-L
 - Prompts
 - More but to lazy to list
 
-Created by [Deity#0228] & [Abstract#8007] & [shezan#8872]
+Created by [Deity#0228] & [Abstract#8007] & remade by [shezan#8872]
 
 ## Documentation
 
