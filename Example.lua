@@ -58,14 +58,14 @@ tab:dropdown({
     }
 })
 tab:dropdown({
-    Name = "yes",
+    Name = "Example",
     StartingText = "Number",
     Items = {
         {"One", 1},
         {"Two", 2},
         {"Three", 3}
     },
-    Description = "amongu s",
+    Description = "Number Picker",
     Callback = function(v)
         print(v, "clicked")
     end,
