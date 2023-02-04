@@ -10,7 +10,7 @@ local tab = gui:tab{
 }
 
 tab:button({
-    Name = "show prompt",
+    Name = "Aimbot - Prompt",
     Callback = function()
         tab:prompt{
             Title = "baby",
