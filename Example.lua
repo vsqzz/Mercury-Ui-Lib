@@ -10,7 +10,7 @@ local tab = gui:tab{
 }
 
 tab:button({
-    Name = "Aimbot - Prompt",
+    Name = "Aimbot",
     Callback = function()
         tab:prompt{
             Title = "baby",
@@ -49,7 +49,7 @@ tab:keybind({Callback = function()
 end,})
 tab:dropdown({
     Name = "Dropdown",
-    Description = "yeeeeeeeeeeeeeeeeeeeboi",
+    Description = "Example Txt",
     StartingText = "Bodypart",
     Items = {
         "Head",
