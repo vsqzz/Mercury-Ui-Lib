@@ -36,6 +36,14 @@ Tab:Button{
 }
 
 Tab:Button{
+	Name = "Blatant Silent Aim",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/blatant%20silentaim.lua", true))()
+	    end,
+}
+
+Tab:Button{
 	Name = "Camlock",
 	Description = nil,
 	Callback = function() 
