@@ -18,8 +18,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/Mercury-Ui-L
 - Color Picker
 - Notifications
 - Prompts
-
-... more to be added.
+- More but to lazy to list
 
 Created by [Deity#0228] and [Abstract#8007]
 
