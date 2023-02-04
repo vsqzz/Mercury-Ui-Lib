@@ -43,3 +43,32 @@ Tab:Button{
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/Hat%20Gui.lua", true))()
 	    end,
 }
+
+
+GUI:Notification{
+	Title = "Ice Spice",
+	Text = "You thought I was Feelin' You?",
+	Duration = 30,
+	Callback = function() end
+}
+
+GUI:Notification{
+	Title = "Saving local data",
+	Text = "saved in 0.000927192ms",
+	Duration = 30,
+	Callback = function() end
+}
+
+GUI:Notification{
+	Title = "Checking whitelist...",
+	Text = "Whistelistd",
+	Duration = 30,
+	Callback = function() end
+}
+
+
+
+Tab:ColorPicker{
+	Style = Mercury.ColorPickerStyles.Legacy,
+	Callback = function(color) end
+}
