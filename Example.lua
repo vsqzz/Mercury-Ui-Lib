@@ -96,6 +96,14 @@ Tab:Button{
 	    end,
 }
 
+Tab:Button{
+	Name = "Anti AFK",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/RobloxAntiAfk.lua", true))()
+	    end,
+}
+
 local Tab = GUI:Tab{
 	Name = "Universal scripts",
 	Icon = "rbxassetid://6346857246"
