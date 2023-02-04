@@ -28,10 +28,10 @@ tab:button({
                                     Title = "xd",
                                     Text = "sus",
                                     Buttons = {
-                                        balls = function()
+                                        dippitydippity = function()
                                             gui:set_status("github")
                                         end,
-                                        anal = function()
+                                        skipskip = function()
                                             gui:set_Status("money")
                                         end
                                     }
