@@ -60,6 +60,14 @@ Tab:Button{
 }
 
 Tab:Button{
+	Name = "Kals private blue",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/KalPrivate.lua", true))()
+	    end,
+}
+
+Tab:Button{
 	Name = "Hat gui",
 	Description = nil,
 	Callback = function() 
