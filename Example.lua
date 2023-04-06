@@ -141,6 +141,14 @@ local Tab = GUI:Tab{
 }
 
 Tab:Button{
+	Name = "Universal FPS game lock",
+	Description = nil,
+	Callback = function() 
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/ALotOfRobloxScripts/main/Roblox%20Scripts/Fpsgame%20aimbot.lua", true))()
+	    end,
+}
+
+Tab:Button{
 	Name = "Universal Silent aim",
 	Description = nil,
 	Callback = function() 
