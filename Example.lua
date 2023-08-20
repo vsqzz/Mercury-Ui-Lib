@@ -11,6 +11,7 @@
  ~ by shezan
 	~ this is just a example
 		~ not a loadstring xd
+			~ DONT USE
 ]]
 
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/Mercury-Ui-Lib/main/Source.lua"))()
