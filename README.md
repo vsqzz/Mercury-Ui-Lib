@@ -27,7 +27,7 @@ Created by [Deity#0228] & [Abstract#8007] & remade by [shezan#8872]
 
 ### Get the Library
 ```lua
-local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/Mercury-Ui-Lib/main/Source.lua"))()
+local Furious = loadstring(game:HttpGet("https://raw.githubusercontent.com/vsqzz/Mercury-Ui-Lib/patch-1/Source.lua"))()
 ```
 
 ### Create the GUI
