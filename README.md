@@ -6,7 +6,7 @@ Just a simple roblox ui library used for exploiting.
 
 ## Loadstring
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shezan78/Mercury-Ui-Lib/main/Source.lua"))()
+local Furious = loadstring(game:HttpGet("https://raw.githubusercontent.com/vsqzz/Mercury-Ui-Lib/patch-1/Source.lua"))()
 ```
 
 ## Features:
