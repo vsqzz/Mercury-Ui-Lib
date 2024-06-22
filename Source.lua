@@ -91,7 +91,89 @@ local Library = {
 
 }
 
-if Settings.KeySystem then
+function RayfieldLibrary:CreateWindow(Settings)
+	local Passthrough = false
+	Topbar.Title.Text = Settings.Name
+	Main.Size = UDim2.new(0, 450, 0, 260)
+	Main.Visible = true
+	Main.BackgroundTransparency = 1
+	LoadingFrame.Title.TextTransparency = 1
+	LoadingFrame.Subtitle.TextTransparency = 1
+	Main.Shadow.Image.ImageTransparency = 1
+	LoadingFrame.Version.TextTransparency = 1
+	LoadingFrame.Title.Text = Settings.LoadingTitle or "Rayfield Interface Suite"
+	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sirius"
+	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
+		LoadingFrame.Version.Text = "Rayfield UI"
+	end
+	Topbar.Visible = false
+	Elements.Visible = false
+	LoadingFrame.Visible = true
+
+
+	pcall(function()
+		if not Settings.ConfigurationSaving.FileName then
+			Settings.ConfigurationSaving.FileName = tostring(game.PlaceId)
+		end
+		if not isfolder(RayfieldFolder.."/".."Configuration Folders") then
+
+		end
+		if Settings.ConfigurationSaving.Enabled == nil then
+			Settings.ConfigurationSaving.Enabled = false
+		end
+		CFileName = Settings.ConfigurationSaving.FileName
+		ConfigurationFolder = Settings.ConfigurationSaving.FolderName or ConfigurationFolder
+		CEnabled = Settings.ConfigurationSaving.Enabled
+
+		if Settings.ConfigurationSaving.Enabled then
+			if not isfolder(ConfigurationFolder) then
+				makefolder(ConfigurationFolder)
+			end	
+		end
+	end)
+
+	AddDraggingFunctionality(Topbar,Main)
+
+	for _, TabButton in ipairs(TabList:GetChildren()) do
+		if TabButton.ClassName == "Frame" and TabButton.Name ~= "Placeholder" then
+			TabButton.BackgroundTransparency = 1
+			TabButton.Title.TextTransparency = 1
+			TabButton.Shadow.ImageTransparency = 1
+			TabButton.Image.ImageTransparency = 1
+			TabButton.UIStroke.Transparency = 1
+		end
+	end
+
+	if Settings.Discord then
+		if not isfolder(RayfieldFolder.."/Discord Invites") then
+			makefolder(RayfieldFolder.."/Discord Invites")
+		end
+		if not isfile(RayfieldFolder.."/Discord Invites".."/"..Settings.Discord.Invite..ConfigurationExtension) then
+			if request then
+				request({
+					Url = 'http://127.0.0.1:6463/rpc?v=1',
+					Method = 'POST',
+					Headers = {
+						['Content-Type'] = 'application/json',
+						Origin = 'https://discord.com'
+					},
+					Body = HttpService:JSONEncode({
+						cmd = 'INVITE_BROWSER',
+						nonce = HttpService:GenerateGUID(false),
+						args = {code = Settings.Discord.Invite}
+					})
+				})
+			end
+
+			if Settings.Discord.RememberJoins then -- We do logic this way so if the developer changes this setting, the user still won't be prompted, only new users
+				writefile(RayfieldFolder.."/Discord Invites".."/"..Settings.Discord.Invite..ConfigurationExtension,"Rayfield RememberJoins is true for this invite, this invite will not ask you to join again")
+			end
+		else
+
+		end
+	end
+
+	if Settings.KeySystem then
 		if not Settings.KeySettings then
 			Passthrough = true
 			return
