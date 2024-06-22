@@ -48,7 +48,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),        
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Omar = {
+		Vaporwave = {
 			Main = Color3.fromRGB(0, 255, 255),
 			Secondary = Color3.fromRGB(240, 248, 255),
 			Tertiary = Color3.fromRGB(0, 139, 139),
