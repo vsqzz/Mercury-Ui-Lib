@@ -32,7 +32,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Rust = {
+		KAI = {
 			Main = Color3.fromRGB(0, 0, 0),
 			Secondary = Color3.fromRGB(65, 63, 63),
 			Tertiary = Color3.fromRGB(255, 0, 0),
