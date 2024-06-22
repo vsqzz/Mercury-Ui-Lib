@@ -909,6 +909,14 @@ function Library:create(options)
 		Internal = creditsTabIcon,
 		Icon = "http://www.roblox.com/asset/?id=8577523456"
 	})
+
+	rawset(mt, "creditsContainer", creditsTab.container)
+
+	creditsTab:credit{Name = "Kai", Description = "ScriptHub Developer", Discord = "vsq_zalt", Roblox = "vsq_zz"}
+	creditsTab:credit{Name = "Omar", Description = "Discord server Manager", Discord = "onlyomar15", Roblox = "Vanix134"}
+	creditsTab:credit{Name = "Discord Server", Description = "Furious Hub discord (JOIN NOW)", Discord="https://discord.gg/euuhPabCKJ"}
+
+	return mt
 end
 
 function Library:notification(options)
