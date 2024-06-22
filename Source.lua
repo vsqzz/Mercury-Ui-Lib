@@ -64,7 +64,14 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),        
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Vaporwave = {},
+		Vaporwave (By Omar) = {
+			Main = Color3.fromRGB(0, 255, 255),
+			Secondary = Color3.fromRGB(240, 248, 255),
+			Tertiary = Color3.fromRGB(0, 139, 139),
+
+			StrongText = Color3.fromHSV(240, 255, 255),        
+			WeakText = Color3.fromHSV(169, 169, 169/255)
+		},
 		OperaGX = {},
 		VisualStudio = {}
 	},
@@ -90,6 +97,9 @@ local Library = {
 	Url = nil
 
 }
+
+
+
 Library.__index = Library
 
 local selectedTab
@@ -912,9 +922,10 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
-	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-    creditsTab:credit{Name = "Shezan", Description = "UI Library/Binary Developer", Discord = "Deleted user :(", V3rmillion = "shezan"}
+	creditsTab:credit{Name = "Kai", Description = "Furious Hub Developer", Discord = "vsq_zalt", Roblox = "vsq_zz"}
+	creditsTab:credit{Name = "Omar", Description = "Discord Server Manager", Discord = "onlyomar15", Roblox = "Vanix134"}
+	creditsTab:credit{Name = "Discord Server", Description = "Furious Hub discord (JOIN NOW)", Discord="https://discord.gg/euuhPabCKJ"}
+
 	return mt
 end
 
