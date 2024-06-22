@@ -1,19 +1,3 @@
---[[
-███╗   ███╗███████╗██████╗  ██████╗██╗   ██╗██████╗ ██╗   ██╗
-████╗ ████║██╔════╝██╔══██╗██╔════╝██║   ██║██╔══██╗╚██╗ ██╔╝
-██╔████╔██║█████╗  ██████╔╝██║     ██║   ██║██████╔╝ ╚████╔╝ 
-██║╚██╔╝██║██╔══╝  ██╔══██╗██║     ██║   ██║██╔══██╗  ╚██╔╝  
-██║ ╚═╝ ██║███████╗██║  ██║╚██████╗╚██████╔╝██║  ██║   ██║   
-╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   
-                                                             
-edited: 2/3/23
-developers:
-v3rm AbstractPoo	discord Abstract#8007
-v3rm 0xDEITY		discord Deity#0228
-github shezan78		discord shezan#8827
-
-]]
-
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -64,7 +48,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),        
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Vaporwave (By Omar) = {
+		Omar = {
 			Main = Color3.fromRGB(0, 255, 255),
 			Secondary = Color3.fromRGB(240, 248, 255),
 			Tertiary = Color3.fromRGB(0, 139, 139),
