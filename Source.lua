@@ -909,13 +909,6 @@ function Library:create(options)
 		Internal = creditsTabIcon,
 		Icon = "http://www.roblox.com/asset/?id=8577523456"
 	})
-
-	rawset(mt, "creditsContainer", creditsTab.container)
-
-	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
-	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-    creditsTab:credit{Name = "Shezan", Description = "UI Library/Binary Developer", Discord = "Deleted user :(", V3rmillion = "shezan"}
-	return mt
 end
 
 function Library:notification(options)
